@@ -1,6 +1,0 @@
-directories:
-  output: dist
-  buildResources: build
-win:
-  target: portable
-electronVersion: 2.0.3
