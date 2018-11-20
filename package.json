@@ -1,0 +1,32 @@
+{
+  "name": "runebud",
+  "version": "1.0.0",
+  "description": "tool for tracking stats and calculating things on oldschool runescape",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/electron .",
+    "lint": "./node_modules/.bin/eslint index.js /view/js/main.js",
+    "pack": "./node_modules/.bin/electron-builder --dir",
+    "dist": "./node_modules/.bin/electron-builder"
+  },
+  "author": "hawkite",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "electron-pug": "^1.5.1",
+    "osrs-wrapper": "^1.0.4",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "electron-builder": "^20.26.0",
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1"
+  },
+  "build": {
+    "win": {
+      "target": "portable"
+    }
+  }
+}
